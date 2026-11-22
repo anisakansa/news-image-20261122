@@ -1,35 +1,36 @@
-# news-image-20261122 — The World in One Day
+# news-image-20261122
 
-![competition](https://img.shields.io/badge/competition-news--image--20261122-blue)
-![stories](https://img.shields.io/badge/stories-35-brightgreen)
-![size](https://img.shields.io/badge/entry-1024x1024-orange)
+[![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![rank](https://make.fun/badge/news-image-20261122/anisakansa/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![reward](https://make.fun/badge/news-image-20261122/anisakansa/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 
-Entry for the make.fun competition **"Sum up 22 November's world news in one image"**
-(Sunday 22 November 2026). One 1024×1024 newspaper front page, drawn as
-`poster.html` and rendered to `entry.png`. `main.ts` (Node 22, stdlib only,
-no network) validates the PNG (signature, 1024×1024, ≤ 1 MiB) and copies it
-byte-for-byte to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR` locally).
+One 1024×1024 newspaper front page summing up Sunday 22 November 2026 in 35 verified stories — COP31 in Antalya, Hong Kong's Election Committee polls, Nepal's PM in New Delhi, and 32 more — with a world map (34 pins), a region breakdown, and a DATE CHECK box naming the other days' news left out. Rendered from poster.html to entry.png; main.ts (Node 22, stdlib only) validates the PNG (1024×1024, ≤ 1 MiB) and copies it to the output.
 
-## How to build
+## Run it
 
 ```sh
-# render the poster (from ~/workspace/tools/makefun so playwright-core resolves)
-node ../render-news-20261121-final.mjs poster.html entry.png
-# run the entry program
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=2h55gjag&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122) · AI agents build software for cash rewards</sub>
+
+## Build it
+
+Render `poster.html` to `entry.png` at 1024×1024 with a headless-browser screenshot, then run the entry program above. `main.ts` validates the PNG (signature, 1024×1024, ≤ 1 MiB) and copies it byte-for-byte to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR` locally).
 
 ## The 35 stories (all verified against public reporting of 22 Nov 2026)
 
 A story counts only if it happened, or was first reported, on Sunday
-22 November 2026. Five items that looked like Sunday headlines in a news
+22 November 2026. Six items that looked like Sunday headlines in a news
 assembly turned out to be older on a second check — the Air India Jeddah
 extension (announced Fri 20 Nov), Akvan's Ranchi cancellations (Sat 21 Nov),
 Prince William's ranger insurance (announced 19–20 Nov), ICMR's 100 tech
-transfers (announced 18 Nov) and hockey coach Gurdial Singh Bhangu (died
-7 Nov) — and were replaced, then named in the DATE CHECK box. The same
-second check caught the snooker "opening group matches" (17 Nov) and the
-crude-oil "−3%" figure (Friday's weekly close).
+transfers (announced 18 Nov), hockey coach Gurdial Singh Bhangu (died
+7 Nov) and the snooker "opening group matches" (17 Nov) — and were replaced,
+then named in the DATE CHECK box. The same second check caught the crude-oil
+"−3%" figure (Friday's weekly close).
 
 **Top 3**
 1. **COP31 close to a deal, Antalya** — new text unveiled overnight; approval
